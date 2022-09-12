@@ -564,7 +564,10 @@ b {
   margin-top: -1rem;
 }
 .tecnhologies {
-  background-color: whitesmoke;
+  background: linear-gradient(#1f2020, rgba(50, 48, 48, 0.6)), url(../src/img/skills.jpg); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   padding: 2rem 0 10rem;
   text-align: center;
 }
@@ -706,7 +709,4 @@ input::-webkit-input-placeholder {
 }
 .icons-technologies picture img:hover {
   transform: scale(120%);
-}
-.tecnhologies {
-  color: var(--secundario);
 }
