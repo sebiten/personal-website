@@ -230,7 +230,6 @@ img {
   display: flex;
   min-height: 20vh;
   min-width: 100%;
-  margin-bottom: 3rem;
   text-align: center;
   margin-top: -4rem;
 }
@@ -340,11 +339,12 @@ img {
 }
 
 .contenedor-bar {
-  column-gap: 20rem;
+  background: linear-gradient(#00000000 0%, rgba(27, 27, 27, 0.789) 0%),
+    url(../src/img/black.jpg);
+  column-gap: 10rem;
   padding-bottom: 15rem;
   width: 100%;
   height: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,11 +378,11 @@ img {
   }
 }
 .contenedor-bar .lenguage-skills {
-  margin-top: 14rem;
+  margin-top: 12rem;
   color: #fff;
 }
 .lenguage {
-  margin-bottom: 30rem;
+  margin-bottom: 33rem;
 }
 @media (max-width: 600px) {
   .lenguage {
@@ -495,6 +495,8 @@ img {
   transform: scale(105%);
 }
 .about {
+  background: linear-gradient(#00000000 0%, rgba(27, 27, 27, 0.789) 0%),
+    url(../src/img/black.jpg);
   color: var(--terciario);
   text-align: center;
   font-weight: 400;
@@ -566,7 +568,8 @@ b {
   margin-top: -1rem;
 }
 .tecnhologies {
-  background: linear-gradient(#1f2020, rgba(50, 48, 48, 0.6)), url(../src/img/skills.jpg); 
+  background: linear-gradient(#e2e4e4 0%, rgba(0, 0, 0, 0.4) 0%),
+    url(../src/img/whitebg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -622,11 +625,9 @@ b {
   background-color: rgba(0, 0, 0, 0.6);
   padding-top: 2rem;
 }
-.show-more {
-  margin: 0 auto;
-  margin-bottom: 10rem;
-
- 
+.app {
+  background: linear-gradient(#00000000 0%, rgba(27, 27, 27, 0.789) 0%),
+    url(../src/img/black.jpg);
 }
 .producto__imagen {
   background-size: cover;
@@ -685,7 +686,6 @@ input::-webkit-input-placeholder {
   background: var(--white);
   color: var(--oscuro);
   box-shadow: -4px 4px 0 var(--oscuro);
-
 }
 
 .footer {
@@ -699,17 +699,24 @@ input::-webkit-input-placeholder {
   );
 }
 .footer_info {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: monospace;
   margin: 0 5rem;
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.footer .footer_info nav .footer-link {
+  display: flex;
+  color: #05183c;
+}
 .contact {
-  background-color: var(--primario);
-  padding: 4rem;
+  background: linear-gradient(#e2e4e4 0%, rgba(0, 0, 0, 0.4) 0%),
+    url(../src/img/whitebg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8rem;
 }
 .seblogo {
   margin-top: 2rem;
@@ -721,12 +728,15 @@ input::-webkit-input-placeholder {
 /* MY PROYECTS */
 
 #portfolio {
-  max-width: 85%;
+  background: linear-gradient(#00000000 0%, rgba(27, 27, 27, 0.789) 0%),
+    url(../src/img/black.jpg);
+  max-width: 100%;
   padding: 100px;
   margin: auto;
   margin-bottom: -5rem;
 }
-#portfolio .titulo-seccion{
+
+#portfolio .titulo-seccion {
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
@@ -739,7 +749,6 @@ input::-webkit-input-placeholder {
   display: flex;
   justify-content: space-between;
   margin: 8rem 0 0 0;
-
 }
 #portfolio .fila .proyecto {
   max-width: 450px;
@@ -749,18 +758,16 @@ input::-webkit-input-placeholder {
   overflow: hidden;
   border-radius: 3rem;
   height: 34vh;
-
 }
 #portfolio .fila .proyecto img {
   width: 100%;
   height: 100%;
   filter: grayscale(0);
   object-fit: cover;
-  transition: .5s;
+  transition: 0.5s;
 }
 #portfolio .fila .proyecto:hover img {
   filter: grayscale(1);
-
 }
 #portfolio .fila .proyecto .info {
   position: absolute;
@@ -771,16 +778,27 @@ input::-webkit-input-placeholder {
   width: 100%;
   opacity: 0;
   bottom: -30px;
-  transition: .5s;
+  transition: 0.5s;
   text-align: center;
 }
 #portfolio .fila .proyecto .info h4 {
   margin-bottom: -1rem;
   color: var(--white);
-
 }
 #portfolio .fila .proyecto:hover .info {
   opacity: 1;
   bottom: 0;
+}
+/* RESPONSIVE */
 
+@media (max-width: 1200px) {
+  #portfolio {
+    padding: 50px 0;
+  }
+  #portfolio .fila {
+    display: block;
+  }
+  #portfolio .fila .proyecto {
+    margin: 10px auto;
+  }
 }
