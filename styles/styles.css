@@ -765,7 +765,7 @@ input::-webkit-input-placeholder {
 #portfolio .fila .proyecto .info {
   position: absolute;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 1, 0.9);
   color: white;
   font-family: sans-serif;
   width: 100%;
