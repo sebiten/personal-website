@@ -119,7 +119,6 @@ img {
     margin: 2rem auto;
     width: 350px;
   }
-
 }
 
 .sobre-nosotros__texto p {
@@ -128,7 +127,6 @@ img {
   padding-top: 2rem;
   text-align: center;
 }
-
 
 @media (min-width: 1024px) {
   .contenedor-about {
@@ -242,9 +240,7 @@ img {
   .sidebar {
     display: flex;
     width: 100vw;
-
   }
-    
 }
 .sidebar {
   display: flex;
@@ -568,7 +564,7 @@ b {
   margin-top: -1rem;
 }
 .tecnhologies {
-  background-color: #05183c;
+  background-color: whitesmoke;
   padding: 2rem 0 10rem;
   text-align: center;
 }
@@ -676,8 +672,8 @@ input::-webkit-input-placeholder {
   font-size: 3rem;
   padding: 0.3em;
   background: var(--white);
-  color: var(--primario);
-  box-shadow: -4px 4px 0 #fff;
+  color: var(--oscuro);
+  box-shadow: -4px 4px 0 var(--oscuro);
   /* margin: 0 auto; */
 }
 
