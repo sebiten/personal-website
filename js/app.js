@@ -22,13 +22,6 @@ function scrollNav() {
         const seccion = document.querySelector(seccionScroll)
         seccion.scrollIntoView({behavior: 'smooth'})
     })
-    const enlaces2 = document.querySelector('.sidebar .menu .two');
-    enlaces2.addEventListener('click', function(e) {
-        e.preventDefault();
-        const seccionScroll = e.target.attributes.href.value;
-        const seccion = document.querySelector(seccionScroll)
-        seccion.scrollIntoView({behavior: 'smooth'})
-    })
     const enlaces3 = document.querySelector('.sidebar .menu .three');
     enlaces3.addEventListener('click', function(e) {
         e.preventDefault();
