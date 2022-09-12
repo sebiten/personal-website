@@ -7,7 +7,7 @@ function iniciarApp() {
 }
 function scrollNav() {
   const enlaces = document.querySelector(".about-nav a");
-  enlaces.addEventListener("click", function (e) {
+  enlaces.addEventListener("click", function(e) {
     e.preventDefault();
     const seccionScroll = e.target.attributes.href.value;
     const seccion = document.querySelector(seccionScroll);
