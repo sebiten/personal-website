@@ -52,6 +52,7 @@ a {
   z-index: 2;
 }
 .menu-link {
+  margin-top: 1rem;
   background-image: linear-gradient(
     to right,
     #54b3d6,
@@ -573,7 +574,7 @@ b {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding: 2rem 0 10rem;
+  padding: 14rem 0 15rem 0;
   text-align: center;
 }
 .contact-content form button {
@@ -716,7 +717,7 @@ input::-webkit-input-placeholder {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 8rem;
+  padding: 14rem 0 14rem 0;
 }
 .seblogo {
   margin-top: 2rem;
@@ -731,9 +732,9 @@ input::-webkit-input-placeholder {
   background: linear-gradient(#00000000 0%, rgba(27, 27, 27, 0.789) 0%),
     url(../src/img/black.jpg);
   max-width: 100%;
-  padding: 100px;
+  padding: 180px;
   margin: auto;
-  margin-bottom: -5rem;
+  margin-bottom: -15rem;
 }
 
 #portfolio .titulo-seccion {
@@ -794,9 +795,11 @@ input::-webkit-input-placeholder {
 @media (max-width: 1200px) {
   #portfolio {
     padding: 50px 0;
+
   }
   #portfolio .fila {
     display: block;
+    margin-bottom: 5rem;
   }
   #portfolio .fila .proyecto {
     margin: 10px auto;
