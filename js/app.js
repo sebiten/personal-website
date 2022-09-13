@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function iniciarApp() {
   scrollNav();
+  navegacionLink();
 }
 function scrollNav() {
   const enlaces = document.querySelector(".about-nav a");
@@ -13,28 +14,19 @@ function scrollNav() {
     const seccion = document.querySelector(seccionScroll);
     seccion.scrollIntoView({ behavior: "smooth" });
   });
-  const enlaces1 = document.querySelector(".sidebar .menu .one");
-  enlaces1.addEventListener("click", function (e) {
-    e.preventDefault();
-    const seccionScroll = e.target.attributes.href.value;
-    const seccion = document.querySelector(seccionScroll);
-    seccion.scrollIntoView({ behavior: "smooth" });
-  });
-  const enlaces3 = document.querySelector(".sidebar .menu .three");
-  enlaces3.addEventListener("click", function (e) {
-    e.preventDefault();
-    const seccionScroll = e.target.attributes.href.value;
-    const seccion = document.querySelector(seccionScroll);
-    seccion.scrollIntoView({ behavior: "smooth" });
-  });
-  const enlaces4 = document.querySelector(".sidebar .menu .four");
-  enlaces4.addEventListener("click", function (e) {
-    e.preventDefault();
-    const seccionScroll = e.target.attributes.href.value;
-    const seccion = document.querySelector(seccionScroll);
-    seccion.scrollIntoView({ behavior: "smooth" });
-  });
 }
+function navegacionLink() {
+  const navegacion = document.querySelectorAll('.sidebar .menu a')
+  navegacion.forEach( navegacion => navegacion.addEventListener('click', function(e) {
+    e.preventDefault();
+    const seccionScroll = e.target.attributes.href.value;
+    const seccion = document.querySelector(seccionScroll);
+    seccion.scrollIntoView({behavior: 'smooth'});
+  
+  
+  }))
+}
+
 
 const $form = document.querySelector("#form");
 const $buttonMailto = document.querySelector("#trucazo");
