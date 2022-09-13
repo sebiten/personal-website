@@ -340,8 +340,7 @@ img {
 }
 
 .contenedor-bar {
-  background: linear-gradient(#00000000 0%, rgba(27, 27, 27, 0.789) 0%),
-    url(../src/img/black.jpg);
+  background: #111;
   column-gap: 10rem;
   padding-bottom: 15rem;
   width: 100%;
@@ -496,8 +495,7 @@ img {
   transform: scale(105%);
 }
 .about {
-  background: linear-gradient(#00000000 0%, rgba(27, 27, 27, 0.789) 0%),
-    url(../src/img/black.jpg);
+  background: #111;
   color: var(--terciario);
   text-align: center;
   font-weight: 400;
@@ -627,8 +625,8 @@ b {
   padding-top: 2rem;
 }
 .app {
-  background: linear-gradient(#00000000 0%, rgba(27, 27, 27, 0.789) 0%),
-    url(../src/img/black.jpg);
+  background: #111;
+
 }
 .producto__imagen {
   background-size: cover;
@@ -730,8 +728,7 @@ input::-webkit-input-placeholder {
 /* MY PROYECTS */
 
 #portfolio {
-  background: linear-gradient(#00000000 0%, rgba(27, 27, 27, 0.789) 0%),
-    url(../src/img/black.jpg);
+  background: #111;
   max-width: 100%;
   padding: 180px;
   margin: auto;
