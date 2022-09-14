@@ -224,7 +224,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  object-fit: cover;
+  object-fit: contain;
 }
 .contenedor {
   margin-bottom: 15rem;
@@ -236,7 +236,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.635);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
 }
 .maquina {
@@ -784,6 +784,16 @@ footer {
   margin-top: 10rem;
 }
 @media (max-width: 720px) {
+  .video-contenedor:after {
+    content: "";
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+  }
   main {
     overflow-x: hidden;
   }
@@ -804,6 +814,7 @@ footer {
   .app .sideabr .menu a:first-child {
     color: transparent;
   }
+
 }
 .footerdos {
   margin-top: 15rem;
