@@ -270,16 +270,13 @@ img {
   }
 }
 .app {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   max-height: 10vh;
   min-width: 100%;
   text-align: center;
-  margin-top: -10rem;
+  margin-top: -6rem;
   z-index: 10;
-}
-.app .sideabr h2 {
-  color: #06296b;
 }
 
 @media (min-width: 585px) {
@@ -749,8 +746,11 @@ input::-webkit-input-placeholder {
   justify-content: space-between;
 }
 footer {
-  background-color: #000;
+  background: rgba(13, 13, 13, 0.9);
   margin-top: 10rem;
+}
+.footerdos {
+  margin-top: 15rem;
 }
 .menu h4 {
   margin-right:8rem;
@@ -779,7 +779,7 @@ footer {
 #portfolio {
   background: rgb(0, 0, 0);
   max-width: 100%;
-  padding: 180px;
+  padding: 100px;
   margin: auto;
   margin-bottom: -15rem;
 }
@@ -796,7 +796,7 @@ footer {
 #portfolio .fila {
   display: flex;
   justify-content: space-between;
-  margin: 8rem 0 0 0;
+  margin: 8rem 0 18rem 0;
 }
 #portfolio .fila .proyecto {
   max-width: 450px;
@@ -861,11 +861,6 @@ footer {
 }
 
 
-body, 
-html {
-  background-color: #f9fefd;
-}
-
 /* ----------------------------- */
 /* NAV BAR STYLES */
 /* ----------------------------- */
@@ -873,52 +868,13 @@ html {
 header {
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 60px;
   position: fixed;
   /* background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.1); */
 }
 
-#logo {
-  height: 50px;
-  width: auto;
-  margin: 5px;
-  display: inline-block;
-}
-
 nav div {
   margin: 0 5px 0 5px;
   position: relative;
-}
-
-nav ul,
-form {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  margin-top: 20px;
-  margin-left: -20px; /* Inline-block elements have whitespace quirk */
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-nav li a#active-page {
-  border-bottom: 3px solid #27ae60;
-}
-
-/* Nav Link Styles */
-nav li a:link,
-nav li a:visited {
-  color: #2c3e50;
-  text-decoration: none;
-  border-bottom: 3px solid transparent;
-  transition: border-bottom 0.2s;
-}
-
-nav li a:hover,
-nav li a:active {
-  border-bottom: 3px solid #27ae60;
 }
