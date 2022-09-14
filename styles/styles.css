@@ -18,7 +18,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-color: var(--oscuro);
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 0;
@@ -39,7 +38,9 @@ h3 {
   font-size: 2.8rem;
 }
 h4 {
+  font-family: monospace;
   font-size: 2.3rem;
+  font-weight: 100;
 }
 p {
   color: var(--white);
@@ -49,9 +50,46 @@ p {
 a {
   text-decoration: none;
   color: var(--primary-color);
-  z-index: 2;
+  z-index: 1;
 }
 .menu-link {
+  margin-top: 1rem;
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    rgb(255, 255, 255) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background-position: 0;
+}
+
+a:hover::before {
+  width: 100%;
+}
+.menu-link2 {
   margin-top: 1rem;
   background-image: linear-gradient(
     to right,
@@ -94,7 +132,6 @@ ul {
   font-size: 2rem;
 }
 img {
-  border-radius: 2rem;
   background-size: cover;
   object-fit: contain;
 }
@@ -103,7 +140,7 @@ img {
   margin-bottom: 5rem;
 }
 .contenedor {
-  z-index: 10;
+  z-index: 12;
 }
 .sobre-nosotros__texto h3 span {
   text-align: start;
@@ -127,6 +164,9 @@ img {
   padding-right: 2rem;
   padding-top: 2rem;
   text-align: center;
+}
+.contenedor-about{
+  margin-top: 15rem;
 }
 
 @media (min-width: 1024px) {
@@ -159,6 +199,8 @@ img {
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+
 }
 .video-contenedor video {
   min-width: 100%;
@@ -176,7 +218,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
   position: absolute;
 }
 .maquina {
@@ -228,11 +270,13 @@ img {
   }
 }
 .app {
+  background: rgba(0, 0, 0, 0);
   display: flex;
-  min-height: 20vh;
+  max-height: 10vh;
   min-width: 100%;
   text-align: center;
-  margin-top: -4rem;
+  margin-top: -10rem;
+  z-index: 10;
 }
 .app .sideabr h2 {
   color: #06296b;
@@ -340,7 +384,7 @@ img {
 }
 
 .contenedor-bar {
-  background: #111;
+  background: rgb(0, 0, 0);
   column-gap: 10rem;
   padding-bottom: 15rem;
   width: 100%;
@@ -495,7 +539,7 @@ img {
   transform: scale(105%);
 }
 .about {
-  background: #111;
+  background: rgb(0, 0, 0);
   color: var(--terciario);
   text-align: center;
   font-weight: 400;
@@ -624,10 +668,6 @@ b {
   background-color: rgba(0, 0, 0, 0.6);
   padding-top: 2rem;
 }
-.app {
-  background: #111;
-
-}
 .producto__imagen {
   background-size: cover;
   background-position-y: center;
@@ -686,17 +726,19 @@ input::-webkit-input-placeholder {
   color: var(--oscuro);
   box-shadow: -4px 4px 0 var(--oscuro);
 }
-
-.footer {
-  width: 100%;
-  height: 15rem;
-  margin-top: 15rem;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(16, 18, 23, 1) 100%
-  );
+.noeffect a:before  {
+  content: "";
+  background: #00000000;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.noeffect a:hover {
+  background-position: 1;
 }
 .footer_info {
   font-family: monospace;
@@ -705,6 +747,13 @@ input::-webkit-input-placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+footer {
+  background-color: #000;
+  margin-top: 10rem;
+}
+.menu h4 {
+  margin-right:8rem;
 }
 .footer .footer_info nav .footer-link {
   display: flex;
@@ -728,7 +777,7 @@ input::-webkit-input-placeholder {
 /* MY PROYECTS */
 
 #portfolio {
-  background: #111;
+  background: rgb(0, 0, 0);
   max-width: 100%;
   padding: 180px;
   margin: auto;
@@ -802,4 +851,74 @@ input::-webkit-input-placeholder {
   #portfolio .fila .proyecto {
     margin: 10px auto;
   }
+}
+.noeffect:hover  {
+  background-position: 11;
+
+}
+.noeffect:hover::before {
+  width: 0%;
+}
+
+
+body, 
+html {
+  background-color: #f9fefd;
+}
+
+/* ----------------------------- */
+/* NAV BAR STYLES */
+/* ----------------------------- */
+
+header {
+  top: 0;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  /* background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.1); */
+}
+
+#logo {
+  height: 50px;
+  width: auto;
+  margin: 5px;
+  display: inline-block;
+}
+
+nav div {
+  margin: 0 5px 0 5px;
+  position: relative;
+}
+
+nav ul,
+form {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: -20px; /* Inline-block elements have whitespace quirk */
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav li a#active-page {
+  border-bottom: 3px solid #27ae60;
+}
+
+/* Nav Link Styles */
+nav li a:link,
+nav li a:visited {
+  color: #2c3e50;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+nav li a:hover,
+nav li a:active {
+  border-bottom: 3px solid #27ae60;
 }
