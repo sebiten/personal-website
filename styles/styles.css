@@ -200,7 +200,6 @@ img {
   height: 100%;
   overflow: hidden;
 
-
 }
 .video-contenedor video {
   min-width: 100%;
@@ -609,7 +608,7 @@ b {
 }
 .tecnhologies {
   background: linear-gradient(#e2e4e4 0%, rgba(0, 0, 0, 0.4) 0%),
-    url(../src/img/whitebg.jpg);
+    url(../src/img/whitebg.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
