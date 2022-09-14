@@ -36,6 +36,7 @@ h2 {
 }
 h3 {
   font-size: 2.8rem;
+  font-weight: 200;
 }
 h4 {
   font-family: monospace;
@@ -52,6 +53,7 @@ a {
   color: var(--primary-color);
   z-index: 1;
 }
+
 .menu-link {
   margin-top: 1rem;
   background-image: linear-gradient(
@@ -68,6 +70,19 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+}
+.floating { 
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0px, -15px); }
+  100%   { transform: translate(0, 0px); }   
 }
 
 a:before {
@@ -210,6 +225,9 @@ img {
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
+.contenedor {
+  margin-bottom: 25rem;
+}
 .video-contenedor:after {
   content: "";
   z-index: 1;
@@ -217,7 +235,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.635);
   position: absolute;
 }
 .maquina {
