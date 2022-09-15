@@ -18,6 +18,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  background-color: #000;
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 0;
@@ -206,7 +207,6 @@ img {
   text-align: center;
   color: #fff;
   padding: 0 20px;
-  margin-bottom: 5rem;
 }
 .video-contenedor {
   position: absolute;
@@ -794,6 +794,18 @@ footer {
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
   }
+  .showcase {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  
   main {
     overflow-x: hidden;
   }
