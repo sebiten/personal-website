@@ -72,7 +72,7 @@ a {
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
-.floating { 
+.floating {
   animation-name: floating;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -81,9 +81,15 @@ a {
 }
 
 @keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0px, -15px); }
-  100%   { transform: translate(0, 0px); }   
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0px, -15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
 }
 
 a:before {
@@ -167,7 +173,15 @@ img {
   margin: 2rem auto;
   width: 500px;
 }
-
+.me {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.floating {
+  width: 400px;
+}
 @media (max-width: 585px) {
   .sobre-nosotros__texto a {
     margin: 2rem auto;
@@ -181,8 +195,10 @@ img {
   padding-top: 2rem;
   text-align: center;
 }
-.contenedor-about{
-  margin-top: 15rem;
+.contenedor-about {
+  margin-top: 20rem;
+  background-color: #070808;
+  padding: 15rem 0;
 }
 
 @media (min-width: 1024px) {
@@ -215,7 +231,6 @@ img {
   width: 100%;
   height: 100%;
   overflow: hidden;
-
 }
 .video-contenedor video {
   min-width: 100%;
@@ -236,7 +251,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
 }
 .maquina {
@@ -268,7 +283,7 @@ img {
   border-right: 4px solid;
   width: 10ch;
   font-size: 4rem;
-  animation: typing 4s steps(14), blink 0.5s infinite step-end alternate;
+  animation: typing 4s steps(10), blink 0.5s infinite;
   overflow: hidden;
   animation-delay: 3s;
 }
@@ -377,11 +392,13 @@ img {
     margin: 0 1rem 0 1rem;
     cursor: pointer;
   }
-  .sobrenosotros-imagen img {
-    border: 5px inset #a4a4a4;
+  .contenedor-about .sobrenosotros-imagen img {
+    border: 7px inset #a4a4a4;
   }
+ 
   .sobrenosotros-imagen {
     display: block;
+    margin: 0 auto;
   }
   .contenedor-info a {
     margin: 0 auto;
@@ -470,33 +487,36 @@ img {
 .Html {
   background: #06296b;
   animation: Html 1s linear forwards;
-  animation-delay: 6s;
+  animation-delay: 1s;
 }
 .English {
   background: #06296b;
   animation: English 1s linear forwards;
-  animation-delay: 6s;
+  animation-delay: 1s;
 }
 .Spanish {
   background: #06296b;
   animation: Spanish 1s linear forwards;
-  animation-delay: 6s;
+  animation-delay: 1s;
 }
 .Css {
   animation: Css 1s linear forwards;
-  animation-delay: 6s;
+  animation-delay: 1s;
 }
 .JavaScript {
   animation: JavaScript 1s linear forwards;
-  animation-delay: 6s;
+  animation-delay: 1s;
 }
 .Sass {
   animation: Sass 1s linear forwards;
-  animation-delay: 6s;
+  animation-delay: 1s;
 }
 .React {
   animation: React 1s linear forwards;
-  animation-delay: 6s;
+  animation-delay: 1s;
+}
+#skills {
+  margin-top: 8rem;
 }
 @keyframes Html {
   100% {
@@ -603,6 +623,7 @@ img {
 }
 b {
   color: var(--terciario);
+
 }
 @media (min-width: 768px) {
   .btn-cv {
@@ -652,6 +673,15 @@ b {
 }
 .contact-content form button {
   margin-left: 1rem;
+}
+#contact {
+  margin-top: 15rem;
+  background: linear-gradient(#e2e4e4 0%, rgba(0, 0, 0, 0.4) 0%),
+  url(../src/img/whitebg.webp);
+  padding: 10rem 0;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 .grid-proyectos {
   margin-top: 10rem;
@@ -730,9 +760,7 @@ b {
   margin-block-end: 0.5em;
   padding-inline-start: 0.5em;
 }
-.form label span {
-  color: #da1414;
-}
+
 .form input,
 .form textarea {
   box-sizing: border-box;
@@ -757,7 +785,7 @@ input::-webkit-input-placeholder {
   color: var(--oscuro);
   box-shadow: -4px 4px 0 var(--oscuro);
 }
-.noeffect a:before  {
+.noeffect a:before {
   content: "";
   background: #00000000;
   display: block;
@@ -780,8 +808,7 @@ input::-webkit-input-placeholder {
   justify-content: space-between;
 }
 footer {
-  background: rgba(13, 13, 13, 0.9);
-  margin-top: 10rem;
+  background: linear-gradient(#e2e4e4 0%, rgba(0, 0, 0, 0.7) 0%),
 }
 @media (max-width: 720px) {
   .video-contenedor:after {
@@ -805,7 +832,7 @@ footer {
     margin-top: 4rem;
     margin-bottom: 3rem;
   }
-  
+
   main {
     overflow-x: hidden;
   }
@@ -813,7 +840,7 @@ footer {
     margin: 0 auto;
   }
   .footer_info {
-    display:flex;
+    display: flex;
     color: transparent;
   }
   nav {
@@ -826,22 +853,14 @@ footer {
   .app .sideabr .menu a:first-child {
     color: transparent;
   }
-
 }
 .footerdos {
   margin-top: 15rem;
 }
 .menu h4 {
-  margin-right:8rem;
+  margin-right: 8rem;
 }
-.contact {
-  background: linear-gradient(#e2e4e4 0%, rgba(0, 0, 0, 0.4) 0%),
-    url(../src/img/whitebg.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 14rem 0 14rem 0;
-}
+
 .seblogo {
   margin-top: 2rem;
   margin-left: -5rem;
@@ -917,7 +936,6 @@ footer {
 @media (max-width: 1200px) {
   #portfolio {
     padding: 50px 0;
-
   }
   #portfolio .fila {
     display: block;
@@ -927,14 +945,12 @@ footer {
     margin: 10px auto;
   }
 }
-.noeffect:hover  {
+.noeffect:hover {
   background-position: 11;
-
 }
 .noeffect:hover::before {
   width: 0%;
 }
-
 
 /* ----------------------------- */
 /* NAV BAR STYLES */
