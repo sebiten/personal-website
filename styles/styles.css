@@ -398,7 +398,7 @@ img {
  
   .sobrenosotros-imagen {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10rem;
   }
   .contenedor-info a {
     margin: 0 auto;
@@ -436,33 +436,23 @@ img {
 }
 .progress_bar {
   background: #959595;
-  width: 400px;
+  width: 300px;
   height: 10px;
   border-radius: 2rem;
 }
-@media (max-width: 996px) {
-  .progress_bar {
-    width: 200px;
-  }
-}
-@media (max-width: 662px) {
-  .progress_bar {
-    width: 100%;
-  }
 
-}
 .contenedor-bar .lenguage-skills {
   color: #fff;
 }
 #languages {
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
+
 }
 
 .progress_bar div {
   height: 10px;
   border-radius: 2rem;
   width: 0;
-  background: var(--terciario);
 }
 .progress_bar div span {
   height: 30px;
@@ -478,7 +468,7 @@ img {
   justify-content: center;
 }
 .Html {
-  background: #06296b;
+  background: var(--terciario);
   animation: Html 1s linear forwards;
   animation-delay: 1s;
 }
@@ -492,19 +482,33 @@ img {
   animation: Spanish 1s linear forwards;
   animation-delay: 1s;
 }
+.tailwindcss {
+  background: var(--terciario);
+  animation: Tailwindcss 1s linear forwards;
+  animation-delay: 1s;
+}
+.git {
+  background: var(--terciario);
+  animation: Git 1s linear forwards;
+  animation-delay: 1s;
+}
 .Css {
+  background: var(--terciario);
   animation: Css 1s linear forwards;
   animation-delay: 1s;
 }
 .JavaScript {
+  background: var(--terciario);
   animation: JavaScript 1s linear forwards;
   animation-delay: 1s;
 }
 .Sass {
+  background: var(--terciario);
   animation: Sass 1s linear forwards;
   animation-delay: 1s;
 }
 .React {
+  background: var(--terciario);
   animation: React 1s linear forwards;
   animation-delay: 1s;
 }
@@ -519,11 +523,23 @@ img {
 @keyframes English {
   100% {
     width: 85%;
+    
   }
 }
+
 @keyframes Spanish {
   100% {
-    width: 100%;
+    width: 92%;
+  }
+}
+@keyframes Tailwindcss {
+  100% {
+    width: 70%;
+  }
+}
+@keyframes Git {
+  100% {
+    width: 82%;
   }
 }
 @keyframes Css {
@@ -650,6 +666,8 @@ b {
     place-items: center;
     text-align: center;
   }
+
+
 }
 .producto__nombre {
   text-align: center;
@@ -664,9 +682,7 @@ b {
   padding: 14rem 0 15rem 0;
   text-align: center;
 }
-#skill {
-  margin: 0 auto;
-}
+
 .contact-content form button {
   margin-left: 1rem;
 }
@@ -782,8 +798,9 @@ input::-webkit-input-placeholder {
   box-shadow: -4px 4px 0 var(--oscuro);
 }
 .tag {
-  margin-top: -5rem;
+  margin: 0 auto;
 }
+
 .noeffect a:before {
   content: "";
   background: #00000000;
@@ -851,6 +868,10 @@ footer {
   }
   .app .sideabr .menu a:first-child {
     color: transparent;
+  }
+  .progress_bar {
+    width: 17vh;
+
   }
 }
 .footerdos {

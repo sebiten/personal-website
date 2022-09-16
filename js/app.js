@@ -41,5 +41,7 @@ function efectoSkills() {
     document.getElementById("react").classList.add("React")
     document.getElementById("english").classList.add("English")
     document.getElementById("spanish").classList.add("Spanish")
+    document.getElementById("tailwindcss").classList.add("tailwindcss")
+    document.getElementById("git").classList.add("git")
   }
 }
