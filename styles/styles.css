@@ -33,7 +33,7 @@ h1 {
 }
 h2 {
   font-size: 5rem;
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
 }
 h3 {
   font-size: 2.8rem;
@@ -251,7 +251,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
 }
 .maquina {
@@ -417,7 +417,7 @@ img {
 
 .contenedor-bar {
   background: rgb(0, 0, 0);
-  column-gap: 10rem;
+  column-gap: 5rem;
   padding-bottom: 15rem;
   width: 100%;
   height: 100%;
@@ -449,22 +449,15 @@ img {
   .progress_bar {
     width: 100%;
   }
-  .lenguage {
-    margin-top: 10rem;
-  }
+
 }
 .contenedor-bar .lenguage-skills {
-  margin-top: 12rem;
   color: #fff;
 }
-.lenguage {
-  margin-bottom: 33rem;
+#languages {
+  margin-bottom: 7rem;
 }
-@media (max-width: 600px) {
-  .lenguage {
-    margin-bottom: 28rem;
-  }
-}
+
 .progress_bar div {
   height: 10px;
   border-radius: 2rem;
@@ -520,12 +513,12 @@ img {
 }
 @keyframes Html {
   100% {
-    width: 82%;
+    width: 89%;
   }
 }
 @keyframes English {
   100% {
-    width: 90%;
+    width: 85%;
   }
 }
 @keyframes Spanish {
@@ -535,7 +528,7 @@ img {
 }
 @keyframes Css {
   100% {
-    width: 78%;
+    width: 86%;
   }
 }
 @keyframes JavaScript {
@@ -545,7 +538,7 @@ img {
 }
 @keyframes Sass {
   100% {
-    width: 60%;
+    width: 69%;
   }
 }
 @keyframes React {
@@ -671,6 +664,9 @@ b {
   padding: 14rem 0 15rem 0;
   text-align: center;
 }
+#skill {
+  margin: 0 auto;
+}
 .contact-content form button {
   margin-left: 1rem;
 }
@@ -784,6 +780,9 @@ input::-webkit-input-placeholder {
   background: var(--white);
   color: var(--oscuro);
   box-shadow: -4px 4px 0 var(--oscuro);
+}
+.tag {
+  margin-top: -5rem;
 }
 .noeffect a:before {
   content: "";
