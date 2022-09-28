@@ -610,12 +610,12 @@ img {
     animation-delay: 1s
 }
 .English {
-    background: #06296b;
+    background: var(--oscuro);
     animation: English 1s linear forwards;
     animation-delay: 1s
 }
 .Spanish {
-    background: #06296b;
+    background: var(--oscuro);
     animation: Spanish 1s linear forwards;
     animation-delay: 1s
 }
