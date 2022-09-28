@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@700&family=Staatliches&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+
+
     
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-66SJ6716WY"></script>
@@ -49,12 +52,23 @@
     <title>Seb Dev Space</title>
     <main>
 
-	<section id="showcase" class="showcase">
+	<section  id="showcase" class="showcase">
 
         <div class="video-contenedor">
-             <video class="" src="./src/video/videobg.mp4" autoplay loop ></video> 
+             <img src="./src/img/mostaza-wallpaper.jpg" alt="">
         </div>
-        <div class="contenedor">
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+        <div data-aos="fade-up"
+        data-aos-duration="3000" class="contenedor">
             <img class="floating" src="./src/img/avatar.png">
             <center>
                 <span class="maquina">Hi! I am Sebastian Burgos </span>
@@ -105,7 +119,7 @@
         </div>
             <div class="contenedor-about">
                 <div class="sobrenosotros-imagen">
-                    <img class="me" src="src\img\seba.webp" alt="imagen nosotros">
+                    <img data-aos="zoom-out" class="me" src="src\img\seba.webp" alt="imagen nosotros">
                 </div>
                 <div class="sobre-nosotros__texto">
                     <center>
@@ -123,7 +137,8 @@
   
 
 
-        <div id="skills" class="contenedor-bar">
+        <div data-aos="fade-up"
+        data-aos-duration="3000" id="skills" class="contenedor-bar">
 
         <div  class="tech-skills lenguage-skills ">
             <h2 class="tag"><span>My skills</span></h1>
@@ -191,11 +206,12 @@
     <!-- </section> -->
      <!-- Fin about -->
 
-    <section id="technologies" class="tecnhologies">
+    <section data-aos="fade-up"
+    data-aos-duration="3000" id="technologies" class="tecnhologies">
         <center>
             <h3 class="tag"><span>Technologies</span></h3>
         </center>
-        <div class="icons-technologies grid-iconos">
+        <div  class="icons-technologies grid-iconos">
             <picture>
                 <source srcset="src/img/01-tec.webp" type="image/webp">
                 <source srcset="src/img/01-tec.png" type="image/png">
@@ -221,13 +237,13 @@
                 <img loading="lazy" width="200" height="300" src="src/img/05-tec.webp" alt="">
             </picture>
             <picture>
-                <img src="src/img/git.png">
+                <img loading="lazy" width="200" height="300" src="src/img/git.png">
             </picture>
             <picture>
-                <img src="src/img/gulp.png">
+                <img loading="lazy" width="200" height="300" src="src/img/gulp.png">
             </picture>
             <picture>
-                <img src="src/img/visual1.png">
+                <img loading="lazy" width="200" height="300" src="src/img/visual1.png">
             </picture>
         </div>
     </section>
@@ -350,6 +366,9 @@
         </div>
     </footer> <!-- Fin footer -->
     <script src="./js/app.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
