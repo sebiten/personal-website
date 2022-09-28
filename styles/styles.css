@@ -112,6 +112,18 @@ a {
     -webkit-text-fill-color: transparent;
     transition: all .3s ease-in-out
 }
+.menu-linkone {
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #ffffff, #ffffff 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .3s ease-in-out
+}
 .floating {
     animation-name: floating;
     animation-duration: 2s;
@@ -717,6 +729,25 @@ img {
 .btn:hover {
     transform: scale(105%)
 }
+.first-link {
+    border: 3px outset #ffffff;
+    padding: 1rem 6rem;
+    font-size: 2rem;
+}
+
+.linkedin-link, .git-link, .tw-link  {
+        margin-top: 1rem;
+        background-image: linear-gradient(to right, #ffffff, #ffffff 50%, #fff 50%);
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: .5rem .5rem;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+}
+
 .btn-showmore {
     display: block;
     padding: 10px 30px;
