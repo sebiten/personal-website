@@ -53,7 +53,8 @@ p {
 a {
     text-decoration: none;
     color: var(--primary-color);
-    z-index: 1
+    z-index: 1;
+    font-size: 1rem;
 }
 .loader-bg {
     position: fixed;
@@ -101,6 +102,8 @@ a {
     }
 }
 .menu-link {
+    text-transform: uppercase;
+    font-weight: 700;
     margin-top: 1rem;
     background-image: linear-gradient(to right, #304f3c, #304f3c 50%, #fff 50%);
     background-size: 200% 100%;
@@ -113,6 +116,8 @@ a {
     transition: all .3s ease-in-out
 }
 .menu-linkone {
+    text-transform: uppercase;
+    font-weight: 700;
     margin-top: 1rem;
     background-image: linear-gradient(to right, #ffffff, #ffffff 50%, #fff 50%);
     background-size: 200% 100%;
@@ -596,7 +601,7 @@ img {
     color: #fff
 }
 #languages {
-    margin-bottom: 4rem
+    margin-bottom: -7rem
 }
 .progress_bar div {
     height: 10px;
@@ -634,6 +639,11 @@ img {
 .tailwindcss {
     background: var(--terciario);
     animation: Tailwindcss 1s linear forwards;
+    animation-delay: 1s
+}
+.styledcomponents {
+    background: var(--terciario);
+    animation: styledcomponents 1s linear forwards;
     animation-delay: 1s
 }
 .git {
@@ -680,6 +690,11 @@ img {
     }
 }
 @keyframes Tailwindcss {
+    100% {
+        width: 74%
+    }
+}
+@keyframes styledcomponents {
     100% {
         width: 70%
     }
@@ -733,6 +748,7 @@ img {
     border: 3px outset #ffffff;
     padding: 1rem 6rem;
     font-size: 2rem;
+    font-weight: ;
 }
 
 .linkedin-link, .git-link, .tw-link  {
@@ -1053,8 +1069,8 @@ footer {
 }
 #portfolio .fila {
     display: flex;
-    justify-content: space-between;
-    margin: 8rem 0 15rem
+    justify-content: center;
+    margin: 6rem 0 10rem
 }
 #portfolio .fila .proyecto {
     max-width: 450px;
