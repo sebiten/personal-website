@@ -44,5 +44,6 @@ function efectoSkills() {
     document.getElementById("tailwindcss").classList.add("tailwindcss")
     document.getElementById("styled").classList.add("styledcomponents")
     document.getElementById("git").classList.add("git")
+    document.getElementById("menu-off").classList.add("menu-active")
   }
 }

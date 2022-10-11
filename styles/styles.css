@@ -122,7 +122,7 @@ a {
     background-image: linear-gradient(to right, #ffffff, #ffffff 50%, #fff 50%);
     background-size: 200% 100%;
     background-position: -100%;
-    display: inline-block;
+    display: block;
     padding: 5px 0;
     position: relative;
     -webkit-background-clip: text;
@@ -328,7 +328,9 @@ img {
     margin-bottom: 5rem
 }
 .contenedor {
-    z-index: 12
+    z-index: 12;
+    margin-bottom: 10rem;
+
 }
 .sobre-nosotros__texto h3 span {
     text-align: start;
@@ -404,9 +406,7 @@ img {
     transform: translate(-50%, -50%);
     object-fit: contain
 }
-.contenedor {
-    margin-bottom: 15rem
-}
+
 .video-contenedor:after {
     content: "";
     z-index: 1;
@@ -473,8 +473,9 @@ img {
     min-width: 100%;
     text-align: center;
     margin-top: -8rem;
-    z-index: 10
+    z-index: 10;
 }
+
 @media (min-width: 585px) {
     .sidebar {
         display: flex;
@@ -488,8 +489,8 @@ img {
     justify-content: space-evenly
 }
 .sidebar nav a {
-    min-width: 350px;
-    border-bottom: solid 2px var(--white);
+    min-width: 250px;
+    border-bottom: solid 5px var(--white);
     padding: 0 2rem
 }
 .sideabr h2 {
@@ -748,7 +749,6 @@ img {
     border: 3px outset #ffffff;
     padding: 1rem 6rem;
     font-size: 2rem;
-    font-weight: ;
 }
 
 .linkedin-link, .git-link, .tw-link  {
@@ -1044,6 +1044,16 @@ footer {
 .menu h4 {
     margin-right: 8rem
 }
+.menu {
+    z-index: 10;
+}
+@media (min-width: 1024px) {
+    .menu-active {
+        position: fixed;
+    
+    }
+}
+
 .seblogo {
     margin-top: 2rem;
     margin-left: -5rem
