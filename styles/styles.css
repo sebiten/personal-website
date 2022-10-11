@@ -38,7 +38,8 @@ h2 {
 }
 h3 {
     font-size: 2.8rem;
-    font-weight: 200
+    font-weight: 200;
+    margin: 0;
 }
 h4 {
     font-family: monospace;
@@ -620,7 +621,9 @@ img {
     color: #333;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
 }
 .Html {
     background: var(--terciario);
@@ -746,11 +749,13 @@ img {
     transform: scale(105%)
 }
 .first-link {
+    display: none;
+}
+.second-link {
     border: 3px outset #ffffff;
     padding: 1rem 6rem;
     font-size: 2rem;
 }
-
 .linkedin-link, .git-link, .tw-link  {
         margin-top: 1rem;
         background-image: linear-gradient(to right, #ffffff, #ffffff 50%, #fff 50%);
