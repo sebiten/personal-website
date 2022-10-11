@@ -491,7 +491,7 @@ img {
 }
 .sidebar nav a {
     min-width: 250px;
-    border-bottom: solid 5px var(--white);
+    border-bottom: solid 3px var(--white);
     padding: 0 2rem
 }
 .sideabr h2 {
