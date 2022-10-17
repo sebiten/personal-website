@@ -830,7 +830,8 @@ b {
     width: 200px;
     height: 200px;
     margin-top: 10rem;
-    place-items: center
+    place-items: center;
+    margin-bottom: 2rem;
 }
 @media (min-width: 1200px) {
     .grid-iconos {
@@ -966,8 +967,10 @@ input::-webkit-input-placeholder {
     font-size: 3rem;
     padding: .3em;
     background: var(--white);
-    color: var(--oscuro);
-    box-shadow: -4px 4px 0 var(--oscuro)
+    color: var(--black);
+    box-shadow: -4px 4px 0 var(--oscuro);
+    border-radius: 1rem;
+    
 }
 .tag {
     margin: 0 auto
@@ -1055,7 +1058,7 @@ footer {
 @media (min-width: 1024px) {
     .menu-active {
         position: fixed;
-    
+
     }
 }
 
@@ -1063,9 +1066,28 @@ footer {
     margin-top: 2rem;
     margin-left: -5rem
 }
-.icons-technologies picture img:hover {
-    transform: scale(120%)
+
+@media (min-width: 1200px) {
+    .icons-technologies picture h3 {
+        border-bottom: 3px solid var(--oscuro);
+        border-radius: 1rem;
+        background-color: rgba(237, 237, 237, 0.6);
+        color: black;
+        
+        
+    }
 }
+.icons-technologies picture h3 {
+    color: var(--black);
+    background-color: rgba(237, 237, 237, 0.6);
+    width: 200px;
+    margin: auto;
+    border-radius: 1rem;
+    font-size: 2.2rem;
+    
+
+}
+
 #portfolio {
     background: #000;
     max-width: 100%;
