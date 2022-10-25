@@ -973,7 +973,7 @@ input::-webkit-input-placeholder {
     
 }
 .tag {
-    margin: 0 auto
+    margin: 0 auto;
 }
 .noeffect a:before {
     content: "";
